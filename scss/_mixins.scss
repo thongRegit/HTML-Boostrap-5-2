@@ -1,0 +1,10 @@
+@mixin mobile {
+    @media screen and (max-width: 546px) {
+        @content;
+    }
+}
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
