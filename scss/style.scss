@@ -1,0 +1,397 @@
+@import "_variables";
+@import "_base";
+@import "_mixins";
+
+    /*--------------- Responsive --------------------------*/
+    .wrapper {
+        @include mobile {
+            width: 90%;
+        }
+    }
+
+    /*---------- Header----------------------- */
+    .header {
+        position: fixed;
+        z-index: 10;
+        height: $height-header;
+        background: rgba(255, 255, 255, 0.65);
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.25);
+        @include mobile {
+            height: $height-header-mobile;
+            background: $color-white;
+        }
+        .header-nav {
+            .container {
+                padding: $padding-top-and-bottom-header 0;
+                z-index: 10;
+                @include mobile {
+                    padding: $padding-top-and-bottom-header-mobile 0;
+                    width: 90%;
+                    justify-content: space-between;
+                }
+                .toggle {
+                    @include mobile {
+                        display: block;
+                        width: 3.5rem;
+                        height: 3.7rem;
+                        padding: 0;
+                        border: 0;
+                        background: transparent;
+                        position: unset;
+                        button {
+                            width: 3.5rem;
+                            height: 3.7rem;
+                            background: transparent;
+                        }
+                    }
+                }   
+                .header-logo {
+                    margin-right: 3rem;
+                    @include mobile {
+                        width: 100%;
+                        justify-content: center;
+                        margin-right: 0;
+                        position: absolute;
+                        right: 0;
+                    }
+                    img {
+                        width: 6.1rem;
+                        height: 6.1rem;
+                        object-fit: contain;
+                        @include mobile {
+                            width: 4.7rem;
+                            height: 4.5rem;  
+                        }
+                    }
+                    p {
+                        @include fontAndColor (700, 2rem, $color-black);;
+                    }
+                }
+                .header-search {
+                    width: 30%;
+                    max-width: 37.4rem;
+                    height: 4.5rem;
+                    form {
+                        height: 4.5rem;
+                        input {
+                            background: $color-white;
+                            border: 0.1rem solid #D4D4D4;
+                            border-radius: 0.4rem;
+                            padding: 0 3.2rem 0 2rem;
+                            &::placeholder {
+                                font-weight: 500;
+                                font-size: 1.5rem;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                margin-left: 2rem;
+                            }
+                            @include mobile {
+                                display: none;
+                                .display {
+                                    display: block;
+                                }
+                            }
+                        }   
+                        button {
+                            background: transparent;
+                            padding: 0 1.5rem;
+                            @include mobile {
+                                padding: 0;
+                                width: 3.5rem;
+                            }   
+                            img {
+                                transform: translate(-50%, -50%);
+                            }
+                        }
+                    }
+                }
+                .header-btn {
+                    right: 18.7rem;
+                    @include mobile {
+                        display: none;
+                    }
+                    .btn-top {
+                        @include fontAndColor (500, 1.5rem,$color-one);
+                        width: 5.1rem;
+                        height: 3.1rem;
+                        line-height: 3.1rem;
+                        border-radius: 0.3rem;
+                        background: transparent;
+                    }
+                    .btn-create-blog {
+                        @include fontAndColor (500, 1.5rem, $color-one);
+                        width: 8.6rem;
+                        height: 2.4rem;
+                        margin-left: 2.7rem;
+                        line-height: 2.2rem;
+                        background: transparent;
+                    }
+                }
+                .header-account {
+                    @include mobile {
+                        display: none;
+                    }
+                    .name-account {
+                        @include fontAndColor (500, 1.5rem, $color-one);
+                    }
+                    .btn-account {
+                        width: 2.7rem;
+                        height: 2.7rem;
+                        margin: 0 0.75rem 0 1.7rem;
+                        background: transparent;
+                    }
+                }
+                @include mobile {
+                    .display {
+                        display: block;
+                        width: 100%;
+                    }
+                    .hide {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /*---------- Breadcrumb-------------------------- */
+    .bread-crumb {
+        nav {
+            width: 14.7rem;
+            height: 2.3rem;
+            --bs-breadcrumb-divider: '>';
+            margin-top: 15.6rem;
+            .breadcrumb-item {
+                @include fontAndColor (400, 1.6rem, $color-one);
+                line-height: 23px;
+                &::before {
+                    color:#A19F9F;
+                }
+                a {
+                    text-decoration: none;
+                    color: #AFAFAF;
+                }
+            }
+        }
+    }
+
+    /* ---------------Title------------------------ */
+    .title {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        @include fontAndColor (700, 1.8rem, $color-black);
+        line-height: 26px;
+    }
+
+    /* ---------------Content------------------------*/
+    .content {
+        .container {
+            margin-bottom: 2.6rem;
+        }
+        .container.information {
+            .author {
+                img {
+                    margin-right: 0.8rem;
+                }
+                .text {
+                    p.name {
+                        @include fontAndColor (500, 1.2rem, $color-black);
+                        line-height: 1.7rem;
+                    }
+                    p.date-create {
+                        @include fontAndColor (400, 1.1rem, #A7A7A7);
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+            .upload {
+                button.not-approved {
+                    width: 11rem;
+                    height: 3.1rem;
+                    border-radius: 3px;
+                    @include fontAndColor (500, 1.5rem, $color-white);
+                    margin-top: -0.5rem;
+                    @include mobile {
+                        width: 10.7rem;
+                        margin-top: 0;
+                    }
+                }
+                button.delete-blog {
+                    width: 10.4rem;
+                    height: 3.1rem;
+                    background: #DC3545;
+                    border-radius: 3px;
+                    @include fontAndColor (500, 1.5rem, $color-white);
+                    margin-top: -0.5rem;
+                    margin-left: 3.1rem;
+                    @include mobile {
+                        width: 9.5rem;
+                        margin-left: 1.3rem;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+        .container.article {
+            img {
+                margin-bottom: 4rem;
+                object-fit: contain;
+            }
+            p {
+                @include fontAndColor (400, 1.4rem, $color-two);
+                line-height: 2rem;
+            }
+        } 
+        .container.article-related {
+            p {
+                @include fontAndColor (700, 2.4rem, $color-one);
+                line-height: 3.5rem;
+            }
+            .change-line {
+                width: 6.3rem;
+                border-bottom: 0.3rem solid $color-two;
+                right: -50%;
+                transform: translateX(-50%);
+            }
+            .grid {
+                margin-top: 2.3rem;
+                margin-bottom: 8.1rem;
+                background: $color-white;
+                gap: 3.6rem;
+                @include mobile {
+                    gap: 2.4rem;
+                }
+                .post {
+                    background: $color-white;
+                    border: 0.1rem solid $color-three;
+                    border-radius: 0.8rem;
+                    --bs-gap: 5rem;
+                    border: 0.1rem solid $color-three;
+                    img {
+                        object-fit: contain;
+                    }
+                    p {
+                        @include fontAndColor (700, 1.7rem, $color-black);
+                        line-height: 2.8rem;
+                        width: 90%;
+                        margin: 1.5rem 5% 3.5rem 5%;
+                    }
+                }
+            }
+        }      
+     }
+    /* ---------------Comment------------------------*/
+    .comment.container {
+        margin-bottom: 5rem;
+        img {
+            width: 4.8rem;
+            height: 4.8rem;
+            margin-right: 1.7rem;
+            object-fit: contain;
+            @include mobile {
+                width: 3.6rem;
+                height: 3.6rem;
+            }
+        }
+        .area-comment {
+            margin-bottom: 2.2rem;;
+            textarea {
+                width: 123rem;
+                resize: none;
+                background: $color-white;
+                border: 1px solid #E1E1E1;
+                border-radius: 4px;
+                @include mobile {
+                    height: 5.5rem;
+                    width: 40.3rem;
+                }
+            }
+        }
+        .comment-writed {
+            margin: 0 0 0.6rem 0;
+            .user-name {
+                @include fontAndColor (700, 2.4rem, $color-one);
+                line-height: 3.5rem;
+                margin-top: 0.6rem;
+                width: 15.3rem;
+            } 
+            .comment-content, .time-comment {
+                font-weight: 400;
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
+            .time-comment {
+                color: $color-two;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    color: $color-two;
+                }
+            }
+        }
+    }
+
+    /*--------------- Footter --------------------------*/
+    footer {
+        padding: 2.25em;
+        background: $color-black;
+        bottom: 0;
+        @include fontAndColor (500, 1.5rem, $color-white);
+        line-height: 2.2rem;
+    }
+
+    /*--------------- Animation --------------------------*/
+    .header.scroll-up {
+        height: $height-header;
+        overflow: hidden;
+        animation: scroll-up ease .3s;
+        animation-fill-mode: forwards;
+        @include mobile {
+            height: $height-header-mobile;
+        }
+    }
+    .header.scroll-down {
+        height: $height-header;
+        overflow: hidden;
+        animation: scroll-down ease .3s;
+        animation-fill-mode: forwards;
+        @include mobile {
+            height: $height-header-mobile;
+        }
+    }
+    @include keyframes(scroll-down) {
+        from {
+            height: 0;
+        }   
+        to {
+            height: $height-header;
+        }
+    }
+    @include keyframes(scroll-up) {
+        from {
+            height: $height-header;
+        }  
+        to {
+            height: 0;
+        }
+    }
+    @include mobile {
+        @include keyframes(scroll-down) {
+            from {
+                height: 0;
+            }
+            to {
+                height: $height-header-mobile;
+            }
+        }
+        @include keyframes(scroll-up) {
+            from {
+                height: $height-header-mobile;
+            }
+            to {
+                height: 0;
+            }
+        }
+    }

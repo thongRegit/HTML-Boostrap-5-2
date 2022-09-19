@@ -1,0 +1,22 @@
+{
+  "name": "webpack-demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile:css": "sass --watch scss/style.scss css/style.css",
+    "compile:all": "sass --watch scss:css"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass": "^1.54.9",
+    "vite": "^3.1.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "navigo": "^8.11.1"
+  }
+}

@@ -1,0 +1,15 @@
+@mixin mobile {
+    @media screen and (max-width: 546px) {
+        @content;
+    }
+}
+@mixin keyframes($name) {
+    @keyframes #{$name} {
+        @content;
+    }
+}
+@mixin fontAndColor($font-weight, $font-size, $color) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    color: $color;
+}
