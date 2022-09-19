@@ -1,0 +1,27 @@
+* {
+    box-sizing: inherit;
+    font-family: 'Noto Sans JP';
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/* Font */
+@font-face {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    src: local('SVN-Gilroy'), url('https://fonts.cdnfonts.com/s/32660/SVNGilroy Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'SVN-Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    src: local('SVN-Gilroy'), url('https://fonts.cdnfonts.com/s/32660/SVNGilroy Bold.woff') format('woff');
+}

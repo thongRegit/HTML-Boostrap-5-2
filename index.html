@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+            <div class="header-nav">
+                <div class="container d-flex">
+                    <div class="toggle">
+                        <button class="btn-toggle">
+                            <img src="./asset/img/ToggleButton.png" alt="">
+                        </button>
+                    </div>
+                    <div class="header-logo d-flex">
+                        <img src="./asset/img/logo.png" alt="logo-company" class="img-name-company">
+                        <p class="name-company">RT-Blogs</p>
+                    </div>
+                    <div class="header-search">
+                        <form>
+                            <input type="text" id="tab-search" placeholder="Seach Blog" name="tab-search"
+                                class="tab-search">
+                            <button class="btn-search" type="submit">
+                                <img src="./asset/img/icon-search.png" alt="icon-search">
+                            </button>
+                        </form>
+                    </div>
+                    <div class="header-btn">
+                        <button class="btn-top">
+                            Top
+                        </button>
+                        <button class="btn-create-blog">
+                            Create Blog
+                        </button>
+                    </div>
+                    <div class="header-account ">
+                        <div class="name-account">myname</div>
+                        <button class="btn-account">
+                            <img src="./asset/img/icon-account.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </header >
+    <div class="container px-0">
+        <div class="wrapper">
+            <div class="bread-crumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="title">
+                <p>My Cat like the boss</p>
+            </div>
+            <div class="content">
+                <div class="container px-0 information d-flex justify-content-between">
+                    <div class="author d-flex align-items-center">
+                        <img src="./asset/img/avatar.png" alt="avatar-author">
+                        <div class="text">
+                            <p class="name">My Name</p>
+                            <p class="date-create">05/09/2022</p>
+                        </div>
+                    </div>
+                    <div class="upload">
+                        <!-- <button class="btn-not-approved">
+                                        Not approved
+                                     </button>   
+                                     <button class="delete-blog">
+                                        Delete blog
+                                     </button> -->
+                        <button type="button" class="btn btn-secondary not-approved">Not approved</button>
+                        <button type="button" class="btn btn-danger delete-blog">Delete blog</button>
+                    </div>
+                </div>
+                <div class="container px-0 article ">
+                    <img src="./asset/img/img-content.png" alt="image-content">
+                    <p>
+                        Because she is. At least in her mind. Cats are affectionately narcissistic in a very subtle. It's
+                        like
+                        somehow they just know that in ancient Egypt they were once worshipped as Gods and that is their
+                        self
+                        image that's natural to them. This is only my opinion based on the cats that I have lived with.
+                    </p>
+                </div>
+                <div class="container px-0 article-related">
+                    <p>Related</p>
+                    <img class="line" src="./asset/img/Line.png" alt="line">
+                    <div class="grid">
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        </div>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        </div>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        </div>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
+                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        </div>
+                    </div>
+                    <p>Commnet</p>
+                    <img class="line" src="./asset/img/Line.png" alt="line">
+                </div>
+            </div>
+            <div class="container px-0 comment">
+                <div class="area-comment d-flex">
+                    <img src="./asset/img/avatar-comment.png" alt="avartar">
+                    <textarea name="comment" cols="30" rows="10"></textarea>
+                </div>
+                <div class="comment-writed d-flex">
+                    <img src="./asset/img/avatar-comment.png" alt="avartar">
+                    <div class="user-comment">
+                        <p class="user-name">YourName</p>
+                        <p class="comment-content">Yes, it's right</p>
+                        <p class="time-comment d-flex">30 phút trước <a href="#">Trả lời</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Coppyright 2022. Made by Regit JSC
+    </footer>
+</body>
+<script src="./asset/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
+</html>
