@@ -14,47 +14,46 @@
 </head>
 
 <body>
-    <header class="header">
-            <div class="header-nav">
-                <div class="container d-flex">
-                    <div class="toggle">
-                        <button class="btn-toggle">
-                            <img src="./asset/img/ToggleButton.png" alt="">
+    <header class="header w-100 top-0 start-0">
+        <div class="header-nav w-100">
+            <div class="container d-flex h-100 align-items-center position-relative">
+                <div class="toggle d-lg-none ">
+                    <button class="btn-toggle p-0 border-0">
+                        <img src="./asset/img/ToggleButton.png" alt="">
+                    </button>
+                </div>
+                <div class="header-logo d-flex">
+                    <img src="./asset/img/logo.png" alt="logo-company" class="img-name-company">
+                    <p class="name-company my-auto mx-0">RT-Blogs</p>
+                </div>
+                <div class="header-search position-relative my-auto mx-0">
+                    <form class="position-relative">
+                        <input type="text" id="tab-search" placeholder="Seach Blog" name="tab-search" class="tab-search position-relative w-100 h-100 my-auto mx-0">
+                        <button class="btn-search position-absolute h-100 border-0 top-0 end-0 " type="submit">
+                            <img src="./asset/img/icon-search.png" alt="icon-search" class="position-absolute top-50 end-0">
                         </button>
-                    </div>
-                    <div class="header-logo d-flex">
-                        <img src="./asset/img/logo.png" alt="logo-company" class="img-name-company">
-                        <p class="name-company">RT-Blogs</p>
-                    </div>
-                    <div class="header-search">
-                        <form>
-                            <input type="text" id="tab-search" placeholder="Seach Blog" name="tab-search"
-                                class="tab-search">
-                            <button class="btn-search" type="submit">
-                                <img src="./asset/img/icon-search.png" alt="icon-search">
-                            </button>
-                        </form>
-                    </div>
-                    <div class="header-btn">
-                        <button class="btn-top">
-                            Top
-                        </button>
-                        <button class="btn-create-blog">
-                            Create Blog
-                        </button>
-                    </div>
-                    <div class="header-account ">
-                        <div class="name-account">myname</div>
-                        <button class="btn-account">
-                            <img src="./asset/img/icon-account.png" alt="">
-                        </button>
-                    </div>
+                    </form>
+                </div>
+                <div class="header-btn position-absolute">
+                    <button class="btn-top text-center p-0 border-0">
+                        Top
+                    </button>
+                    <button class="btn-create-blog text-center p-0 border-0">
+                        Create Blog
+                    </button>
+                </div>
+                <div class="header-account position-absolute end-0 py-0 px-auto">
+                    <div class="name-account d-inline align-middle">myname</div>
+                    <button class="btn-account p-0 border-0 me-0">
+                        <img src="./asset/img/icon-account.png" alt="button-account" class="w-100 h-100">
+                    </button>
                 </div>
             </div>
-    </header >
+        </div>
+    </header>
     <div class="container px-0">
-        <div class="wrapper">
-            <div class="bread-crumb">
+        <div class="wrapper w-100 p-0 my-0 mx-auto">
+            <div class="bread-crumb mb-0">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -70,23 +69,17 @@
                     <div class="author d-flex align-items-center">
                         <img src="./asset/img/avatar.png" alt="avatar-author">
                         <div class="text">
-                            <p class="name">My Name</p>
-                            <p class="date-create">05/09/2022</p>
+                            <p class="name m-0">My Name</p>
+                            <p class="date-create m-0">05/09/2022</p>
                         </div>
                     </div>
                     <div class="upload">
-                        <!-- <button class="btn-not-approved">
-                                        Not approved
-                                     </button>   
-                                     <button class="delete-blog">
-                                        Delete blog
-                                     </button> -->
-                        <button type="button" class="btn btn-secondary not-approved">Not approved</button>
-                        <button type="button" class="btn btn-danger delete-blog">Delete blog</button>
+                        <button type="button" class="btn btn-secondary not-approved border-0 p-0">Not approved</button>
+                        <button type="button" class="btn btn-danger delete-blog border-0 p-0">Delete blog</button>
                     </div>
                 </div>
-                <div class="container px-0 article ">
-                    <img src="./asset/img/img-content.png" alt="image-content">
+                <div class="container px-0 article w-100">
+                    <img src="./asset/img/img-content.png" alt="image-content" class="w-100">
                     <p>
                         Because she is. At least in her mind. Cats are affectionately narcissistic in a very subtle. It's
                         like
@@ -95,31 +88,31 @@
                         image that's natural to them. This is only my opinion based on the cats that I have lived with.
                     </p>
                 </div>
-                <div class="container px-0 article-related">
-                    <p>Related</p>
-                    <img class="line" src="./asset/img/Line.png" alt="line">
+                <div class="container px-0 article-related ">
+                    <p class="text-center">Related</p>
+                    <div class="change-line position-relative"></div>
                     <div class="grid">
-                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content" class="w-100">
+                            <p class="text-start">Lorem ipsum dolor sit amet, adipiscing elit.</p>
                         </div>
-                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content" class="w-100">
+                            <p class="text-start">Lorem ipsum dolor sit amet, adipiscing elit.</p>
                         </div>
-                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content" class="w-100">
+                            <p class="text-start">Lorem ipsum dolor sit amet, adipiscing elit.</p>
                         </div>
-                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content">
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                        <div class="post g-col-lg-3 g-col-6"><img src="./asset/img/img-content-related.png" alt="img-content" class="w-100">
+                            <p class="text-start">Lorem ipsum dolor sit amet, adipiscing elit.</p>
                         </div>
                     </div>
-                    <p>Commnet</p>
-                    <img class="line" src="./asset/img/Line.png" alt="line">
+                    <p class="text-center">Commnet</p>
+                    <div class="change-line position-relative"></div>
                 </div>
             </div>
             <div class="container px-0 comment">
-                <div class="area-comment d-flex">
+                <div class="area-comment d-flex align-items-center">
                     <img src="./asset/img/avatar-comment.png" alt="avartar">
-                    <textarea name="comment" cols="30" rows="10"></textarea>
+                    <textarea name="comment" cols="30" rows="5"></textarea>
                 </div>
                 <div class="comment-writed d-flex">
                     <img src="./asset/img/avatar-comment.png" alt="avartar">
@@ -132,15 +125,15 @@
             </div>
         </div>
     </div>
-    <footer>
+    <footer class="w-100 d-flex justify-content-center align-items-center">
         Coppyright 2022. Made by Regit JSC
     </footer>
-</body>
-<script src="./asset/js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    <script src="./asset/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
     crossorigin="anonymous"></script>
+</body>
 </html>

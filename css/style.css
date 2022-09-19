@@ -10,6 +10,7 @@ body {
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  font-style: normal;
 }
 
 /* Font */
@@ -26,11 +27,6 @@ html {
   src: local("SVN-Gilroy"), url("https://fonts.cdnfonts.com/s/32660/SVNGilroy Bold.woff") format("woff");
 }
 /*--------------- Responsive --------------------------*/
-.wrapper {
-  width: 100%;
-  padding: 0;
-  margin: 0 auto;
-}
 @media screen and (max-width: 546px) {
   .wrapper {
     width: 90%;
@@ -40,9 +36,6 @@ html {
 /*---------- Header----------------------- */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 10;
   height: 12.2rem;
   background: rgba(255, 255, 255, 0.65);
@@ -54,26 +47,16 @@ html {
     background: #FFFFFF;
   }
 }
-.header .header-nav {
-  height: 100%;
-}
 .header .header-nav .container {
   padding: 3rem 0;
-  height: 100%;
-  position: relative;
   z-index: 10;
-  align-items: center;
 }
 @media screen and (max-width: 546px) {
   .header .header-nav .container {
     padding: 1.2rem 0;
-    align-items: center;
     width: 90%;
     justify-content: space-between;
   }
-}
-.header .header-nav .container .toggle {
-  display: none;
 }
 @media screen and (max-width: 546px) {
   .header .header-nav .container .toggle {
@@ -88,8 +71,6 @@ html {
   .header .header-nav .container .toggle button {
     width: 3.5rem;
     height: 3.7rem;
-    padding: 0;
-    border: 0;
     background: transparent;
   }
 }
@@ -117,8 +98,6 @@ html {
   }
 }
 .header .header-nav .container .header-logo p {
-  margin: auto 0;
-  font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   color: #000000;
@@ -127,25 +106,17 @@ html {
   width: 30%;
   max-width: 37.4rem;
   height: 4.5rem;
-  position: relative;
-  margin: auto 0;
 }
 .header .header-nav .container .header-search form {
   height: 4.5rem;
-  position: relative;
 }
 .header .header-nav .container .header-search form input {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  margin: auto 0;
   background: #FFFFFF;
   border: 0.1rem solid #D4D4D4;
   border-radius: 0.4rem;
   padding: 0 3.2rem 0 2rem;
 }
 .header .header-nav .container .header-search form input::placeholder {
-  font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   position: absolute;
@@ -163,12 +134,7 @@ html {
   }
 }
 .header .header-nav .container .header-search form button {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
   background: transparent;
-  border: 0;
   padding: 0 1.5rem;
 }
 @media screen and (max-width: 546px) {
@@ -178,13 +144,9 @@ html {
   }
 }
 .header .header-nav .container .header-search form button img {
-  position: absolute;
-  top: 50%;
-  right: 0;
   transform: translate(-50%, -50%);
 }
 .header .header-nav .container .header-btn {
-  position: absolute;
   right: 18.7rem;
 }
 @media screen and (max-width: 546px) {
@@ -193,36 +155,24 @@ html {
   }
 }
 .header .header-nav .container .header-btn .btn-top {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #212121;
   width: 5.1rem;
   height: 3.1rem;
   line-height: 3.1rem;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  color: #212121;
-  padding: 0px;
-  border: 0;
   border-radius: 0.3rem;
   background: transparent;
-  text-align: center;
 }
 .header .header-nav .container .header-btn .btn-create-blog {
-  width: 8.6rem;
-  height: 2.4rem;
   font-weight: 500;
   font-size: 1.5rem;
   color: #212121;
-  padding: 0px;
+  width: 8.6rem;
+  height: 2.4rem;
   margin-left: 2.7rem;
-  text-align: center;
   line-height: 2.2rem;
   background: transparent;
-  border: 0;
-}
-.header .header-nav .container .header-account {
-  position: absolute;
-  right: 0;
-  padding: auto 0;
 }
 @media screen and (max-width: 546px) {
   .header .header-nav .container .header-account {
@@ -230,24 +180,15 @@ html {
   }
 }
 .header .header-nav .container .header-account .name-account {
-  display: inline;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   color: #212121;
-  vertical-align: middle;
 }
 .header .header-nav .container .header-account .btn-account {
   width: 2.7rem;
   height: 2.7rem;
-  margin: 0 0 0 1.7rem;
+  margin: 0 0.75rem 0 1.7rem;
   background: transparent;
-  padding: 0;
-  border: 0;
-}
-.header .header-nav .container .header-account .btn-account img {
-  width: 100%;
-  height: 100%;
 }
 @media screen and (max-width: 546px) {
   .header .header-nav .container .display {
@@ -265,14 +206,12 @@ html {
   height: 2.3rem;
   --bs-breadcrumb-divider: ">";
   margin-top: 15.6rem;
-  margin-bottom: 0;
 }
 .bread-crumb nav .breadcrumb-item {
-  font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
+  font-size: 1.6rem;
   color: #212121;
+  line-height: 23px;
 }
 .bread-crumb nav .breadcrumb-item::before {
   color: #A19F9F;
@@ -286,11 +225,10 @@ html {
 .title {
   margin-top: 4rem;
   margin-bottom: 4rem;
-  font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.8rem;
   color: #000000;
+  line-height: 26px;
 }
 
 /* ---------------Content------------------------*/
@@ -301,30 +239,24 @@ html {
   margin-right: 0.8rem;
 }
 .content .container.information .author .text p.name {
-  margin: 0;
-  font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.7rem;
 }
 .content .container.information .author .text p.date-create {
-  margin: 0;
-  font-style: normal;
   font-weight: 400;
-  font-size: 11px;
-  line-height: 16px;
+  font-size: 1.1rem;
   color: #A7A7A7;
+  line-height: 1.6rem;
 }
 .content .container.information .upload button.not-approved {
   width: 11rem;
   height: 3.1rem;
   border-radius: 3px;
-  border: 0;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   color: #FFFFFF;
-  padding: 0;
   margin-top: -0.5rem;
 }
 @media screen and (max-width: 546px) {
@@ -338,12 +270,9 @@ html {
   height: 3.1rem;
   background: #DC3545;
   border-radius: 3px;
-  border: 0;
-  font-style: normal;
   font-weight: 500;
   font-size: 1.5rem;
   color: #FFFFFF;
-  padding: 0;
   margin-top: -0.5rem;
   margin-left: 3.1rem;
 }
@@ -356,26 +285,23 @@ html {
 }
 .content .container.article img {
   margin-bottom: 4rem;
-  width: 100%;
   object-fit: contain;
 }
 .content .container.article p {
-  font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
-  line-height: 2rem;
   color: #747474;
+  line-height: 2rem;
 }
 .content .container.article-related p {
-  text-align: center;
-  font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 2.4rem;
   color: #212121;
+  line-height: 3.5rem;
 }
-.content .container.article-related img.line {
-  position: relative;
+.content .container.article-related .change-line {
+  width: 6.3rem;
+  border-bottom: 0.3rem solid #747474;
   right: -50%;
   transform: translateX(-50%);
 }
@@ -396,20 +322,17 @@ html {
   border-radius: 0.8rem;
   --bs-gap: 5rem;
   border: 0.1rem solid #CCCCCC;
-  border-radius: 0.8rem;
 }
 .content .container.article-related .grid .post img {
-  width: 100%;
   object-fit: contain;
 }
 .content .container.article-related .grid .post p {
-  font-style: normal;
   font-weight: 700;
   font-size: 1.7rem;
+  color: #000000;
   line-height: 2.8rem;
   width: 90%;
   margin: 1.5rem 5% 3.5rem 5%;
-  text-align: left;
 }
 
 /* ---------------Comment------------------------*/
@@ -429,11 +352,9 @@ html {
   }
 }
 .comment.container .area-comment {
-  align-items: center;
   margin-bottom: 2.2rem;
 }
 .comment.container .area-comment textarea {
-  height: 8.2rem;
   width: 123rem;
   resize: none;
   background: #FFFFFF;
@@ -448,13 +369,12 @@ html {
 }
 .comment.container .comment-writed {
   margin: 0 0 0.6rem 0;
-  font-style: normal;
 }
 .comment.container .comment-writed .user-name {
   font-weight: 700;
   font-size: 2.4rem;
-  line-height: 3.5rem;
   color: #212121;
+  line-height: 3.5rem;
   margin-top: 0.6rem;
   width: 15.3rem;
 }
@@ -474,18 +394,13 @@ html {
 
 /*--------------- Footter --------------------------*/
 footer {
-  width: 100%;
   padding: 2.25em;
   background: #000000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   bottom: 0;
-  font-style: normal;
   font-weight: 500;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 1.5rem;
   color: #FFFFFF;
+  line-height: 2.2rem;
 }
 
 /*--------------- Animation --------------------------*/
