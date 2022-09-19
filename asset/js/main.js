@@ -10,7 +10,7 @@ window.onscroll = function () {
         if (currentScrollPos <= heightHeader) {
             header.classList.remove("scroll-up");
             header.classList.add("scroll-down");
-        }else {
+        } else {
             header.classList.add("scroll-up");
             header.classList.remove("scroll-down");
         }
